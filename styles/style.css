@@ -1,3 +1,114 @@
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
 
+::selection {
+  background-color: #4b5862;
+}
+
+a {
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 40px;
+  padding: 1rem;
+}
+
+.btn-primary {
+  background-color: white;
+  color: #ff525d;
+}
+
+.btn-primary:hover {
+  background-color: #ff7a85;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: #ff525d;
+}
+
+header {
+  border-radius: 0 0 0 80px;
+  background: linear-gradient(to right, #ff8f70 0%, #ff3d54 100%);
+}
+header .header-wrapper {
+  padding: 4rem 0;
+  background-image: url("../../images/bg-pattern-intro.svg");
+  background-repeat: no-repeat;
+  background-size: 200%;
+  background-position: right 80% top 52.5%;
+}
+header .header-wrapper nav {
+  display: flex;
+  padding: 0 8rem;
+}
+header .header-wrapper nav .logo-menu {
+  height: 3rem;
+  margin-right: 3rem;
+}
+header .header-wrapper nav .navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header-wrapper nav .navbar .links {
+  display: flex;
+}
+header .header-wrapper nav .navbar .auth .btn-primary {
+  margin-left: 2rem;
+  padding: 1rem 2.5rem;
+}
+header .header-wrapper .heading {
+  max-width: 70vw;
+  margin: 5rem auto 0;
+  text-align: center;
+}
+header .header-wrapper .heading h1 {
+  font-family: "Overpass", sans-serif;
+  font-weight: 600;
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1rem;
+}
+header .header-wrapper .heading .description {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  color: white;
+}
+header .header-wrapper .heading .buttons {
+  margin: 3.5rem 0;
+}
+header .header-wrapper .heading .buttons .btn-primary {
+  margin-right: 1rem;
+}
 
 /*# sourceMappingURL=style.css.map */
